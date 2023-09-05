@@ -136,7 +136,7 @@ export const CartProvider = ({ children }: IChildrenProps) => {
       setCartTotal(amount.toFixed(2));
     };
     total();
-  }, [currentSale]);
+  }, [currentSale, products]);
 
   return (
     <CartContext.Provider
