@@ -13,7 +13,7 @@ import { NavigateFunction, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export const schema = z.object({
+export const orderSchema = z.object({
   name: z.string(),
   number: z.string(),
   street: z.string(),
@@ -23,7 +23,7 @@ export const schema = z.object({
   Troco: z.string().nullable(),
 });
 
-export type Data = z.infer<typeof schema>;
+export type Data = z.infer<typeof orderSchema>;
 
 export const FinalizingPurchase = () => {
   const {
@@ -32,7 +32,7 @@ export const FinalizingPurchase = () => {
     formState: { errors },
     reset,
   } = useForm<Data>({
-    resolver: zodResolver(schema),
+    resolver: zodResolver(orderSchema),
     mode: "onBlur",
   });
 
