@@ -99,7 +99,7 @@ export const ContextProviders = ({ children }: IChildrenProps) => {
   const pathPassword = async (data: Ipass) => {
     const token = JSON.parse(localStorage.getItem("@Token") || "");
     try {
-      await api.patch(`user/4`, data, {
+      await api.patch(`user/1`, data, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
