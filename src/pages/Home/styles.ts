@@ -56,6 +56,14 @@ export const SearchContainer = styled.form`
   margin: 0 16px;
 `;
 
+export const Null = styled.h2`
+  display: flex;
+  text-align: center;
+  font-weight: 900;
+  margin: 6rem 0px 6rem 35px;
+  color: #ff8f3f;
+`;
+
 export const SearchInput = styled.input`
   padding: 10px;
   border: 1px solid #ff7402;

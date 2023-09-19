@@ -6,6 +6,7 @@ import {
   Container,
   ContainerUl,
   Global,
+  Null,
   Picture,
   ProductPrice,
   SearchButton,
@@ -63,7 +64,7 @@ export const Home = () => {
             </StyledProduct>
           ))
         ) : (
-          <TitleProduct>Produto não encontrado!!!</TitleProduct>
+          <Null>Produto não encontrado!!!</Null>
         )}
       </ContainerUl>
       <ModalCart />
