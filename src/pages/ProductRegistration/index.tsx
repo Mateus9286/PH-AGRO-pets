@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { Footer } from "../../components/Footer";
 import { HeaderAdmin } from "../../components/HeaderAdmin";
-import { Global } from "../Home/styles";
+import { Global } from "./styles";
 import Trash from "../../assets/lixeira.png";
 import {
   Button,
@@ -24,6 +24,7 @@ import { MenuModal } from "../../components/ModalMenu";
 import { useContext } from "react";
 import { UserContext } from "../../Providers/UserContext";
 import { CartContext } from "../../Providers/CartContext";
+import { Select } from "../Finishing/styles";
 
 const schema = z.object({
   category: z.string(),
@@ -56,7 +57,13 @@ export const ProductRegistration = () => {
         <Title>Cadastro de Produto</Title>
         <form onSubmit={handleSubmit(onSubmit)}>
           <Label htmlFor="category">Categoria</Label>
-          <Input type="text" id="category" {...register("category")} required />
+          <Select {...register("category")} required>
+            <option>cães</option>
+            <option>gatos</option>
+            <option>peixes</option>
+            <option>passaros</option>
+            <option>outros</option>
+          </Select>
           <Label htmlFor="name_product">Nome do Produto</Label>
           <Input
             type="text"

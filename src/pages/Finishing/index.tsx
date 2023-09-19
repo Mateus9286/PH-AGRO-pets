@@ -80,7 +80,7 @@ export const FinalizingPurchase = () => {
   };
 
   return (
-    <Global>
+    <Global isPrincipal>
       <YourComponent />
       <Header />
       <Container>

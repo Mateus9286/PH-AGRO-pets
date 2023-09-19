@@ -7,4 +7,6 @@ export const StyledFooter = styled.footer`
   text-align: center;
   width: 100%;
   border-radius: 5px;
+  position: absolute;
+  bottom: 0;
 `;

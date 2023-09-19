@@ -32,7 +32,7 @@ export const WaitingConfirmation = () => {
   const { street, number, neighborhood, phone, type, Troco, name } = data;
 
   return (
-    <Global>
+    <Global isPrincipal>
       <YourComponent />
       <Header />
       <CardContainer>

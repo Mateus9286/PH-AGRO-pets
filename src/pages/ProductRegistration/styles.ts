@@ -1,4 +1,24 @@
 import styled from "styled-components";
+import background from "../../assets/Design.png";
+
+export const Global = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 5px;
+  background-image: url(${background});
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+`;
 
 export const FormContent = styled.div`
   background-color: #ffffff;
@@ -7,6 +27,7 @@ export const FormContent = styled.div`
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   max-width: 400px;
   width: 90%;
+  height: 100%;
   margin: 30px 0px;
 `;
 
@@ -15,6 +36,7 @@ export const ContainerUl = styled.ul`
   padding: 0 16px;
   overflow: auto;
   width: 100%;
+  margin-bottom: 6rem;
 
   @media (min-width: 900px) {
     padding: 20px 0 20px 80px;

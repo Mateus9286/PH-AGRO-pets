@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import background from "../../assets/Design.png";
 
-export const Global = styled.div`
+export const Global = styled.div<{ isPrincipal?: boolean }>`
   width: 100%;
+  height: 100vh;
+  height: ${(props) => (props.isPrincipal ? "100%" : "100vh")};
   display: flex;
   align-items: center;
   align-content: center;
@@ -12,6 +14,9 @@ export const Global = styled.div`
   background-image: url(${background});
   background-size: cover;
   background-position: center;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: nowrap;
 
   img {
     width: 100%;
@@ -79,8 +84,9 @@ export const SearchButton = styled.button`
 export const ContainerUl = styled.ul`
   display: flex;
   padding: 0 16px;
-  overflow: auto;
+  overflow-y: auto;
   width: 100%;
+  margin-bottom: 6rem;
 
   @media (min-width: 900px) {
     padding: 20px 0 20px 80px;

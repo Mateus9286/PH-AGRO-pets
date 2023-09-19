@@ -9,6 +9,7 @@ export const CardContainer = styled.div`
   padding: 18px;
   max-width: 400px;
   margin: 0 auto;
+  margin-bottom: 6rem;
 
   a {
     background-color: ${MainColor};

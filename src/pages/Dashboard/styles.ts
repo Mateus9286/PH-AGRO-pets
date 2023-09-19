@@ -21,11 +21,12 @@ export const OrderContainer = styled.li`
   background-color: #f4f4f4;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
   min-width: 250px;
   margin: 0px 40px 30px 10px;
   position: relative;
+  height: max-content;
 
   p {
     font-size: small;

@@ -76,10 +76,10 @@ export const CartProvider = ({ children }: IChildrenProps) => {
       ? true
       : product.name_product
           .toLowerCase()
-          .includes(filteredProducts as unknown as string) ||
+          .includes(filteredProducts.toString().toLowerCase()) ||
         product.category
           .toLowerCase()
-          .includes(filteredProducts as unknown as string)
+          .includes(filteredProducts.toString().toLowerCase())
   );
 
   function handleClick(id: number) {

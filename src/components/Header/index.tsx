@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import Ph_pets from "../../assets/PH-PETS.png";
+import Ph_pets from "../../assets/Picsart_.png";
 import Cart from "../../assets/cart.png";
 
 import { CartCont, HeaderStyle, Picture } from "./styles";

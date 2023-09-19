@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import Ph_pets from "../../assets/PH-PETS.png";
+import Ph_pets from "../../assets/Picsart_.png";
 import Menu from "../../assets/menu_FILL0_wght400_GRAD0_opsz48 1.png";
 
 import { HeaderStyle, Picture } from "./styles";

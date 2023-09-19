@@ -9,4 +9,5 @@ export const Button = styled.button`
   position: fixed;
   bottom: 70px;
   right: 15px;
+  z-index: 2;
 `;

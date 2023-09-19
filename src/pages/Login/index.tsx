@@ -9,7 +9,7 @@ import {
   Title,
 } from "./styles";
 import { Global } from "../Home/styles";
-import Logo from "../../assets/PH-PETS.png";
+import Logo from "../../assets/Picsart_.png";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
